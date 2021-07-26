@@ -123,7 +123,7 @@ a {
             #wrap .swiper-wrapper .swiper-slide .inner .content .right .video_box {
               padding-left: 40px; }
               #wrap .swiper-wrapper .swiper-slide .inner .content .right .video_box h2 {
-                font: bold 20px/1 'lato';
+                font: bold 20px/1 'Montserrat';
                 margin-bottom: 10px; }
               #wrap .swiper-wrapper .swiper-slide .inner .content .right .video_box article {
                 display: flex;
@@ -168,7 +168,7 @@ a {
                 cursor: pointer;
                 transition: 0.5s; }
                 #wrap .swiper-wrapper .swiper-slide .inner .content .right .button button:hover {
-                  background: #8076ce; }
+                  background: #867dc7; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
   #wrap .swiper-button-next {

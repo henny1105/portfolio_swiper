@@ -6,6 +6,9 @@ const swiper = new Swiper("#wrap", {
     centeredSlides: true,
     spaceBetween: 50,
     mousewheel: true,
+    keyboard: {
+        enabled: true,
+      },
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -62,19 +65,3 @@ function activation(){
     bgs[i].classList.add("on");
 }
 
-
-// video play
-$(".pause").on("click", function(){
-    $(".swiper-slide-active").find("video").get(0).pause();
- });
- 
- $(".play").on("click", function(){
-    $(".swiper-slide-active").find("video").get(0).play();
-    $(".swiper-slide-active").find("video").css({
-       filter: "saturate(100%)"
-    });
- });
- 
- $(".load").on("click", function(){
-    $(".swiper-slide-active").find("video").get(0).load();
- });
