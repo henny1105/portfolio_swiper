@@ -90,7 +90,7 @@ a {
             display: inline-block; }
             #wrap .swiper-wrapper .swiper-slide .inner .content .left .pic {
               width: 100%;
-              height: 35vh; }
+              height: 30vh; }
               #wrap .swiper-wrapper .swiper-slide .inner .content .left .pic video {
                 width: 100%;
                 height: 100%;
@@ -170,7 +170,20 @@ a {
                 #wrap .swiper-wrapper .swiper-slide .inner .content .right .button button:hover {
                   background: #867dc7; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
-        opacity: 1; }
+        opacity: 1;
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.548); }
+      #wrap .swiper-wrapper .swiper-slide.swiper-slide-active::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: #fff;
+        animation: ani 1s ease 0.3s 1;
+        z-index: -1; }
   #wrap .swiper-button-next {
     width: 50px;
     height: 50px;
@@ -213,5 +226,15 @@ a {
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+    transform: scale(1); }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-const menu = ["Tomorrowland", "Star Wars", "Adventureland", "Paradise Gardens Park"];
+const menu = ["Tomorrowland", "Adventureland", "Star Wars", "Paradise Gardens Park"];
 
 const swiper = new Swiper("#wrap", {
     loop: true,
@@ -24,15 +24,7 @@ const swiper = new Swiper("#wrap", {
         }
 
     },
-    /*
-    effect: "coverflow",
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 400,
-        slideShadows: false
-    }
-    */
+
 });
 
 //Dom Caching
