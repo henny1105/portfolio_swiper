@@ -47,19 +47,19 @@
             }
 
             &:nth-of-type(1) {
-                background-image: url(../img/bg16.jpg);
-            }
-
-            &:nth-of-type(2) {
-                background-image: url(../img/bg6.jpg);
-            }
-
-            &:nth-of-type(3) {
                 background-image: url(../img/bg2.jpg);
             }
 
+            &:nth-of-type(2) {
+                background-image: url(../img/bg1.jpg);
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(../img/bg3.jpg);
+            }
+
             &:nth-of-type(4) {
-                background-image: url(../img/bg14.jpg);
+                background-image: url(../img/bg4.jpg);
             }
         }
     }
@@ -347,6 +347,15 @@
                             padding: 20px;
                             display: flex;
                             flex-direction: row;
+                            position: relative;
+
+                            >h3 {
+                                position: absolute;
+                                top: 4px;
+                                left: -30px;
+                                font: bold 42px/1 'Montserrat';
+                                color: rgba(0, 0, 0, 0.5);
+                            }
 
                             &:nth-of-type(1) {
                                 >.pic {
@@ -754,7 +763,7 @@
                                 font: 14px/1 'Open Sans';
                                 color: #555;
                                 padding: 5px 10px;
-                                background: rgba(222, 150, 255, 0.2);
+                                background: rgba(128, 151, 255, 0.2);
                                 margin-top: 5px;
                             }
                         }
@@ -1006,6 +1015,7 @@
                                             color: #666;
                                             text-align: center;
                                             padding: 5px;
+                                            border-bottom: 1px solid #888;
 
                                             img {
                                                 width: 70px;
@@ -1094,6 +1104,7 @@
                                         height: 70px;
                                         background: #eee;
                                         border-radius: 5px;
+                                        margin-bottom: 5px;
                                     }
 
                                     h4 {
@@ -1153,13 +1164,12 @@
         height: 50px;
         top: auto;
         bottom: 5vh;
-        right: calc(50% - 50px);
+        right: calc(50% - 70px);
         background: url(../img/next.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-
 
 
     .swiper-button-prev {
@@ -1168,7 +1178,7 @@
         top: auto;
         left: auto;
         bottom: 5vh;
-        right: calc(50% + 50px);
+        right: calc(50% + 70px);
         background: url(../img/prev.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -1195,6 +1205,7 @@
             border-radius: 0px;
             margin-left: 60px;
             opacity: 0.7;
+            font: 16px/1 'Montserrat';
             color: #000;
 
             &.swiper-pagination-bullet-active {
